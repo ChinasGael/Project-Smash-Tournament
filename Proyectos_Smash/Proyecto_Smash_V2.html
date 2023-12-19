@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Proyecto_C_Smash.css">
+    <script>
+        function irAOtroHTML(){
+            location.href = 'Proyecto_Smash.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="formulario">
+    <form action="Proyecto_P_Smash_V2.php" method="post">
+        <table>
+            <tr>
+                <td> <input type="text" placeholder="Tu nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td> <input type="nickname" placeholder="Tu nickname" name="nickname" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="edad" placeholder="Tu edad" name="edad" required>
+                </td>
+            </tr>
+            <tr>
+            <td><input type="email" placeholder="tu correo" name="email" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="nacionalidad" placeholder="Tu nacionalidad" name="nacionalidad" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="phone" placeholder="Tu numero de celular" name="telefono" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="enviar" name="enviar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn8" onclick="irAOtroHTML()">Regresa</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>

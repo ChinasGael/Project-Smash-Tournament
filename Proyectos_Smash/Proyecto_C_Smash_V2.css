@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --rojo:    #fe0016;
+    --trojo:   #b65d54;
+    --black:   #080404;
+    --blue:    #37a3fb;
+    --bluet:   #51C9F5;
+    --yellow:  #fdeaa6;
+    --green:   #64bf4b;
+    --orange:  #fbc115;
+    --oranget: #e3805a;
+    --celeste: #51d1f6;
+    --celestet:#67c6be;
+    --purple:  #5b6aa4;
+    --tgreen:  #6d9243;
+    --pink:    #fb73a3;
+    --tyellow: #faf543;
+    --fyellow: #fcd644;
+    --white:   #e5e5e4;
+    --brown:   #8b6754; 
+    --grey:    v;
+    --degradado1:linear-gradient(90deg, var(--rojo), var(--blue));
+    --degradado2:linear-gradient(90deg, var(--purple), var(--fyellow));
+    --degradado3:linear-gradient(90deg, var(--yellow), var(--pink));
+    --degradado4:linear-gradient(90deg, var(--oranget), var(--blue));
+    --degradado5:linear-gradient(90deg, var(--green), var(--purple));
+    --degradado6:linear-gradient(90deg, var(--celeste), var(--tyellow));
+    --degradado7:linear-gradient(90deg, var(--blue), var(--rojo));
+    --degradado8:linear-gradient(90deg, var(--fyellow), var(--purple));
+    --degradado9:linear-gradient(90deg, var(--pink), var(--yellow));
+    --degradado10:linear-gradient(90deg, var(--blue), var(--oranget));
+    --degradado11:linear-gradient(90deg, var(--purple), var(--green));
+    --degradado12:linear-gradient(90deg, var(--tyellow), var(--celeste));
+}
+
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 50;
+    padding: 50;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--black);
+    color: white;
+}
+
+html{
+    font-size: 120%;
+    overflow-x: hidden;
+}
+
+body{
+    background: white;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border: 5px solid rgb(0, 0, 0, .2);
+
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 3px ;
+    background: linear-gradient(
+        45deg,
+        #fe0016,
+        #37a3fb
+    );
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 6%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.btn1{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado1);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn1:hover{
+    transform: scale(1.2);
+    background: var(--degradado7);
+}
+
+.btn2{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado2);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn2:hover{
+    transform: scale(1.2);
+    color: white;
+    background: var(--degradado8);
+}
+
+.btn3{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado3);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn3:hover{
+    transform: scale(1.2);
+    color: white;
+    background: var(--degradado9);
+}
+
+.btn4{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado10);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn4:hover{
+    transform: scale(1.3);
+    color: white;
+    background: var(--degradado4);
+}
+
+.btn5{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado5);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn5:hover{
+    transform: scale(1.3);
+    color: white;
+    background: var(--degradado11);
+}
+
+.btn6{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado6);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn6:hover{
+    transform: scale(1.3);
+    color: white;
+    background: var(--degradado12);
+}
+
+.btn7{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 4.5rem;
+    border-radius: 2rem;
+    background: var(--degradado4);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn7:hover{
+    transform: scale(1.3);
+    color: white;
+    background: var(--degradado10);
+}
+
+.btn8{
+    background: #FACD34;
+    width: 185%;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    color: #0B162F;
+    font-size: 20px;
+}
+
+.btn8:hover{
+    background: #FACD34;
+    transition: .3s;
+    scale: 1.1;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0, .3);
+    padding: .75rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: var(--rojo);
+}
+
+header .logo span{
+    font-size: 2.3rem;
+    margin-left: .5rem;
+    color: var(--black);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: var(--rojo);
+}
+
+header .navbar a:hover{
+    font-size: 2.4rem;
+    margin-left: 1rem;
+    color: var(--black);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color: var(--red);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inicio{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio img{
+    width: 55vw;
+    animation: float 5.5s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(-2rem);
+    }
+    50%{
+        transform: translateY(-6rem);
+    }
+}
+
+.inicio .content h1{
+    font-size: 3.5rem;
+    color: var(--blue);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: #8b6754 0 3.5px;
+}
+
+.inicio .content h1 span{
+    font-size:  2.5rem;
+    color: var(--rojo);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: #37a3fb 0 2.5px;
+}
+
+.caja img{
+    width: 15vw;
+}
+
+.inicio {
+    background: url(Proyecto_IMG_Smash/mario-wallpaperOK.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.inicio .p1{
+    color: var(--blue);
+    text-shadow: #8b6754 0 3.5px;
+    font-size: 35px;
+    line-height: 150%;
+}
+
+.inicio .ph1{
+    color: var(--blue);
+    text-shadow: #8b6754 0 3.5px;
+    font-size: 45px;
+    line-height: 150%;
+}
+
+.detalles .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.detalles .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.detalles .caja-contenedor .caja h1{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.detalles .caja-contenedor .caja p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.detalles .content h1{
+    font-size: 3.5rem;
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.detalles .content h1 span{
+    font-size:  2.5rem;
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.detalles {
+    background: url(Proyecto_IMG_Smash/Wallpaper_FINAL.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.detalles .p2{
+    color: var(--orange);
+    text-shadow: #5b6aa4 0 3.5px;
+    font-size: 35px;
+    line-height: 150%;
+}
+
+.detalles .ph2{
+    color: var(--orange);
+    text-shadow: #5b6aa4 0 3.5px;
+    font-size: 45px;
+    line-height: 150%;
+}
+
+.heading2{
+    text-align: center;
+    background: #5b6aa4;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 100px;
+    text-shadow: #fbc115 0 3.5px;
+}
+
+.reglamento .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reglamento .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.reglamento .caja-contenedor .caja h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.reglamento .caja-contenedor .caja p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.reglamento .content h1{
+    font-size: 3.5rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+}
+
+.reglamento .content h1 span{
+    font-size:  2.5rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+}
+
+.reglamento {
+    background: url(Proyecto_IMG_Smash/zelda-wallpaperOK.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.reglamento .p3{
+    color: var(--pink);
+    text-shadow: #fdeaa6 0 3.5px;
+    font-size: 30px;
+    line-height: 200%;
+}
+
+.reglamento .ph3{
+    color: var(--pink);
+    text-shadow: #fdeaa6 0 3.5px;
+    font-size: 45px;
+    line-height: 150%;
+}
+
+.heading3{
+    text-align: center;
+    background: var(--yellow);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-shadow: #fb73a3 0 3.5px;
+}
+
+.inscripcion .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inscripcion .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.inscripcion .caja-contenedor .caja h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.inscripcion .caja-contenedor .caja p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.inscripcion {
+    background: url(Proyecto_IMG_Smash/trainer-male-wallpaperOK.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.inscripcion .p4{
+    color: var(--bluet);
+    text-shadow: #E2E2E2 0 3.5px;
+    font-size: 35px;
+    line-height: 150%;
+}
+
+.inscripcion .ph4{
+    color: var(--bluet);
+    text-shadow: #E2E2E2 0 3.5px;
+    font-size: 45px;
+    line-height: 150%;
+}
+
+.heading4{
+    text-align: center;
+    background: #E2E2E2;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-shadow: #51C9F5 0 3.5px;
+}
+
+.opiniones .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.opiniones .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.opiniones .caja-contenedor .caja h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.opiniones .caja-contenedor .caja p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.opiniones{
+    background: url(Proyecto_IMG_Smash/toon-link-wallpaperOK.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.opiniones .p5{
+    color: var(--brown);
+    text-shadow: #a8adbc 0 3.5px;
+    font-size: 35px;
+    line-height: 150%;
+}
+
+.opiniones .ph5{
+    color: var(--brown);
+    text-shadow: #a8adbc 0 3.5px;
+    font-size: 45px;
+    line-height: 150%;
+}
+
+.heading5{
+    text-align: center;
+    background: #a8adbc;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-shadow: #8b6754 0 3.5px;
+}
+
+.contactos .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactos .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.contactos .caja-contenedor .caja h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.contactos .caja-contenedor .caja p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.contactos {
+    background: url(Proyecto_IMG_Smash/rosalina-and-luma-wallpaperOK.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.contactos .p6{
+    color: var(--fyellow);
+    text-shadow: #67c6be 0 3.5px;
+    font-size:  37.5px;
+    line-height: 150%;
+}
+
+.contactos .ph6{
+    color: var(--fyellow);
+    text-shadow: #67c6be 0 3.5px;
+    font-size: 52.5px;
+    line-height: 150%;
+}
+
+.heading6{
+    text-align: center;
+    background: #67c6be ;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-shadow: #fcd644 0 3.5px;
+}
+
+.p7 {
+    line-height: 150%;
+}
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgb(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem  rgb(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input :checked ~ label::before{
+        content: '\f00d';
+    }
+    .inicio{
+    flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width: 100%;
+    }
+
+    .inicio .content h1{
+        font-size: 1.5rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media (max-width: 450px){
+        html{
+            font-size: 49%;
+        }
+    }
+
+body{
+
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1rem;
+}
+.formulario{
+    width: 320px;
+    background: url(Proyecto_IMG_Smash/globalsidenav.png);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+input[type = "text"]{
+    width: 185%;
+    background: none;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+
+input[type = "nickname"]{
+    width: 185%;
+    background: none;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+
+input[type = "edad"]{
+    width: 185%;
+    background: none;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+
+input[type = "nacionalidad"]{
+    width: 185%;
+    background: none;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+
+input[type = "radio"]{
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type = "email"]{
+    width: 185%;
+    background: none;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+select[class = "seleccion"]{
+    width: 185%;
+    background: #0B162F;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+input[type = "phone"]{
+    width: 185%;
+    background: none;
+    border: 1px solid #FACD34;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #d33c2f;
+}
+
+input[type = "submit"]{
+    background: #FACD34;
+    width: 185%;
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    color: #0B162F;
+    font-size: 20px;
+}
+input[type = "submit"]:hover{
+    background: #FACD34;
+    transition: .3s;
+    scale: 1.1;
+}
